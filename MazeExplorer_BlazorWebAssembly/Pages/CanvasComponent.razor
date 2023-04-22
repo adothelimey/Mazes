@@ -1,0 +1,13 @@
+﻿@inject IJSRuntime JSRuntime
+
+<canvas id="canvas"></canvas>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("initCanvas", "canvas");
+        }
+    }
+}
