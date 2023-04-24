@@ -1,0 +1,887 @@
+{
+    "SubTexture": [
+      {
+        "Name": "medievalEnvironment_01.png",
+        "X": "534",
+        "Y": "275",
+        "Width": "14",
+        "Height": "32"
+      },
+      {
+        "Name": "medievalEnvironment_02.png",
+        "X": "515",
+        "Y": "256",
+        "Width": "19",
+        "Height": "46"
+      },
+      {
+        "Name": "medievalEnvironment_03.png",
+        "X": "516",
+        "Y": "514",
+        "Width": "19",
+        "Height": "33"
+      },
+      {
+        "Name": "medievalEnvironment_04.png",
+        "X": "511",
+        "Y": "314",
+        "Width": "26",
+        "Height": "48"
+      },
+      {
+        "Name": "medievalEnvironment_05.png",
+        "X": "526",
+        "Y": "499",
+        "Width": "14",
+        "Height": "15"
+      },
+      {
+        "Name": "medievalEnvironment_06.png",
+        "X": "384",
+        "Y": "298",
+        "Width": "36",
+        "Height": "15"
+      },
+      {
+        "Name": "medievalEnvironment_07.png",
+        "X": "531",
+        "Y": "162",
+        "Width": "18",
+        "Height": "16"
+      },
+      {
+        "Name": "medievalEnvironment_08.png",
+        "X": "479",
+        "Y": "354",
+        "Width": "32",
+        "Height": "28"
+      },
+      {
+        "Name": "medievalEnvironment_09.png",
+        "X": "475",
+        "Y": "140",
+        "Width": "38",
+        "Height": "32"
+      },
+      {
+        "Name": "medievalEnvironment_10.png",
+        "X": "475",
+        "Y": "105",
+        "Width": "38",
+        "Height": "35"
+      },
+      {
+        "Name": "medievalEnvironment_11.png",
+        "X": "475",
+        "Y": "70",
+        "Width": "38",
+        "Height": "35"
+      },
+      {
+        "Name": "medievalEnvironment_12.png",
+        "X": "472",
+        "Y": "35",
+        "Width": "38",
+        "Height": "35"
+      },
+      {
+        "Name": "medievalEnvironment_13.png",
+        "X": "511",
+        "Y": "410",
+        "Width": "20",
+        "Height": "23"
+      },
+      {
+        "Name": "medievalEnvironment_14.png",
+        "X": "526",
+        "Y": "458",
+        "Width": "18",
+        "Height": "16"
+      },
+      {
+        "Name": "medievalEnvironment_15.png",
+        "X": "479",
+        "Y": "422",
+        "Width": "32",
+        "Height": "28"
+      },
+      {
+        "Name": "medievalEnvironment_16.png",
+        "X": "458",
+        "Y": "504",
+        "Width": "38",
+        "Height": "32"
+      },
+      {
+        "Name": "medievalEnvironment_17.png",
+        "X": "434",
+        "Y": "48",
+        "Width": "38",
+        "Height": "35"
+      },
+      {
+        "Name": "medievalEnvironment_18.png",
+        "X": "474",
+        "Y": "0",
+        "Width": "38",
+        "Height": "35"
+      },
+      {
+        "Name": "medievalEnvironment_19.png",
+        "X": "436",
+        "Y": "0",
+        "Width": "38",
+        "Height": "35"
+      },
+      {
+        "Name": "medievalEnvironment_20.png",
+        "X": "511",
+        "Y": "233",
+        "Width": "20",
+        "Height": "23"
+      },
+      {
+        "Name": "medievalEnvironment_21.png",
+        "X": "511",
+        "Y": "362",
+        "Width": "21",
+        "Height": "48"
+      },
+      {
+        "Name": "medievalStructure_01.png",
+        "X": "475",
+        "Y": "222",
+        "Width": "36",
+        "Height": "42"
+      },
+      {
+        "Name": "medievalStructure_02.png",
+        "X": "252",
+        "Y": "512",
+        "Width": "60",
+        "Height": "38"
+      },
+      {
+        "Name": "medievalStructure_03.png",
+        "X": "312",
+        "Y": "512",
+        "Width": "52",
+        "Height": "34"
+      },
+      {
+        "Name": "medievalStructure_04.png",
+        "X": "414",
+        "Y": "507",
+        "Width": "44",
+        "Height": "36"
+      },
+      {
+        "Name": "medievalStructure_05.png",
+        "X": "431",
+        "Y": "144",
+        "Width": "44",
+        "Height": "42"
+      },
+      {
+        "Name": "medievalStructure_06.png",
+        "X": "192",
+        "Y": "512",
+        "Width": "60",
+        "Height": "38"
+      },
+      {
+        "Name": "medievalStructure_07.png",
+        "X": "64",
+        "Y": "512",
+        "Width": "52",
+        "Height": "34"
+      },
+      {
+        "Name": "medievalStructure_08.png",
+        "X": "479",
+        "Y": "382",
+        "Width": "32",
+        "Height": "40"
+      },
+      {
+        "Name": "medievalStructure_09.png",
+        "X": "380",
+        "Y": "447",
+        "Width": "56",
+        "Height": "60"
+      },
+      {
+        "Name": "medievalStructure_10.png",
+        "X": "431",
+        "Y": "186",
+        "Width": "44",
+        "Height": "40"
+      },
+      {
+        "Name": "medievalStructure_11.png",
+        "X": "435",
+        "Y": "310",
+        "Width": "44",
+        "Height": "40"
+      },
+      {
+        "Name": "medievalStructure_12.png",
+        "X": "511",
+        "Y": "197",
+        "Width": "20",
+        "Height": "36"
+      },
+      {
+        "Name": "medievalStructure_13.png",
+        "X": "382",
+        "Y": "383",
+        "Width": "53",
+        "Height": "52"
+      },
+      {
+        "Name": "medievalStructure_14.png",
+        "X": "320",
+        "Y": "320",
+        "Width": "63",
+        "Height": "63"
+      },
+      {
+        "Name": "medievalStructure_15.png",
+        "X": "320",
+        "Y": "383",
+        "Width": "62",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalStructure_16.png",
+        "X": "435",
+        "Y": "350",
+        "Width": "44",
+        "Height": "60"
+      },
+      {
+        "Name": "medievalStructure_17.png",
+        "X": "431",
+        "Y": "84",
+        "Width": "44",
+        "Height": "60"
+      },
+      {
+        "Name": "medievalStructure_18.png",
+        "X": "431",
+        "Y": "262",
+        "Width": "44",
+        "Height": "48"
+      },
+      {
+        "Name": "medievalStructure_19.png",
+        "X": "383",
+        "Y": "320",
+        "Width": "52",
+        "Height": "60"
+      },
+      {
+        "Name": "medievalStructure_20.png",
+        "X": "384",
+        "Y": "0",
+        "Width": "52",
+        "Height": "48"
+      },
+      {
+        "Name": "medievalStructure_21.png",
+        "X": "320",
+        "Y": "447",
+        "Width": "60",
+        "Height": "60"
+      },
+      {
+        "Name": "medievalStructure_22.png",
+        "X": "479",
+        "Y": "314",
+        "Width": "32",
+        "Height": "40"
+      },
+      {
+        "Name": "medievalStructure_23.png",
+        "X": "431",
+        "Y": "226",
+        "Width": "44",
+        "Height": "36"
+      },
+      {
+        "Name": "medievalTile_01.png",
+        "X": "0",
+        "Y": "384",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_02.png",
+        "X": "0",
+        "Y": "448",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_03.png",
+        "X": "64",
+        "Y": "0",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_04.png",
+        "X": "64",
+        "Y": "64",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_05.png",
+        "X": "64",
+        "Y": "128",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_06.png",
+        "X": "64",
+        "Y": "384",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_07.png",
+        "X": "64",
+        "Y": "448",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_08.png",
+        "X": "496",
+        "Y": "450",
+        "Width": "30",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_09.png",
+        "X": "0",
+        "Y": "512",
+        "Width": "64",
+        "Height": "30"
+      },
+      {
+        "Name": "medievalTile_10.png",
+        "X": "128",
+        "Y": "64",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_11.png",
+        "X": "128",
+        "Y": "128",
+        "Width": "64",
+        "Height": "47"
+      },
+      {
+        "Name": "medievalTile_12.png",
+        "X": "128",
+        "Y": "367",
+        "Width": "64",
+        "Height": "47"
+      },
+      {
+        "Name": "medievalTile_13.png",
+        "X": "320",
+        "Y": "0",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_14.png",
+        "X": "320",
+        "Y": "64",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_15.png",
+        "X": "320",
+        "Y": "192",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_16.png",
+        "X": "256",
+        "Y": "0",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_17.png",
+        "X": "128",
+        "Y": "0",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_18.png",
+        "X": "192",
+        "Y": "320",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_19.png",
+        "X": "0",
+        "Y": "64",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_20.png",
+        "X": "0",
+        "Y": "0",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_21.png",
+        "X": "64",
+        "Y": "192",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_22.png",
+        "X": "384",
+        "Y": "84",
+        "Width": "47",
+        "Height": "43"
+      },
+      {
+        "Name": "medievalTile_23.png",
+        "X": "436",
+        "Y": "410",
+        "Width": "43",
+        "Height": "47"
+      },
+      {
+        "Name": "medievalTile_24.png",
+        "X": "364",
+        "Y": "507",
+        "Width": "50",
+        "Height": "36"
+      },
+      {
+        "Name": "medievalTile_25.png",
+        "X": "384",
+        "Y": "127",
+        "Width": "47",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_26.png",
+        "X": "384",
+        "Y": "234",
+        "Width": "47",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_27.png",
+        "X": "192",
+        "Y": "256",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_28.png",
+        "X": "320",
+        "Y": "256",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_29.png",
+        "X": "0",
+        "Y": "192",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_30.png",
+        "X": "0",
+        "Y": "128",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_31.png",
+        "X": "192",
+        "Y": "384",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_32.png",
+        "X": "256",
+        "Y": "128",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_33.png",
+        "X": "128",
+        "Y": "303",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_34.png",
+        "X": "192",
+        "Y": "448",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_35.png",
+        "X": "320",
+        "Y": "128",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_36.png",
+        "X": "436",
+        "Y": "457",
+        "Width": "43",
+        "Height": "47"
+      },
+      {
+        "Name": "medievalTile_37.png",
+        "X": "384",
+        "Y": "191",
+        "Width": "47",
+        "Height": "43"
+      },
+      {
+        "Name": "medievalTile_38.png",
+        "X": "384",
+        "Y": "48",
+        "Width": "50",
+        "Height": "36"
+      },
+      {
+        "Name": "medievalTile_39.png",
+        "X": "475",
+        "Y": "172",
+        "Width": "36",
+        "Height": "50"
+      },
+      {
+        "Name": "medievalTile_40.png",
+        "X": "479",
+        "Y": "264",
+        "Width": "36",
+        "Height": "50"
+      },
+      {
+        "Name": "medievalTile_41.png",
+        "X": "256",
+        "Y": "448",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_42.png",
+        "X": "256",
+        "Y": "384",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_43.png",
+        "X": "256",
+        "Y": "320",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_44.png",
+        "X": "256",
+        "Y": "256",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_45.png",
+        "X": "256",
+        "Y": "192",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_46.png",
+        "X": "128",
+        "Y": "239",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_47.png",
+        "X": "256",
+        "Y": "64",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_48.png",
+        "X": "64",
+        "Y": "320",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_49.png",
+        "X": "64",
+        "Y": "256",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_50.png",
+        "X": "128",
+        "Y": "175",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_51.png",
+        "X": "0",
+        "Y": "320",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_52.png",
+        "X": "0",
+        "Y": "256",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_53.png",
+        "X": "192",
+        "Y": "192",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_54.png",
+        "X": "192",
+        "Y": "128",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_55.png",
+        "X": "192",
+        "Y": "64",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_56.png",
+        "X": "192",
+        "Y": "0",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_57.png",
+        "X": "128",
+        "Y": "478",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalTile_58.png",
+        "X": "128",
+        "Y": "414",
+        "Width": "64",
+        "Height": "64"
+      },
+      {
+        "Name": "medievalUnit_01.png",
+        "X": "496",
+        "Y": "514",
+        "Width": "20",
+        "Height": "26"
+      },
+      {
+        "Name": "medievalUnit_02.png",
+        "X": "526",
+        "Y": "433",
+        "Width": "18",
+        "Height": "25"
+      },
+      {
+        "Name": "medievalUnit_03.png",
+        "X": "510",
+        "Y": "35",
+        "Width": "20",
+        "Height": "25"
+      },
+      {
+        "Name": "medievalUnit_04.png",
+        "X": "533",
+        "Y": "51",
+        "Width": "16",
+        "Height": "24"
+      },
+      {
+        "Name": "medievalUnit_05.png",
+        "X": "532",
+        "Y": "386",
+        "Width": "16",
+        "Height": "24"
+      },
+      {
+        "Name": "medievalUnit_06.png",
+        "X": "479",
+        "Y": "450",
+        "Width": "16",
+        "Height": "24"
+      },
+      {
+        "Name": "medievalUnit_07.png",
+        "X": "513",
+        "Y": "136",
+        "Width": "20",
+        "Height": "26"
+      },
+      {
+        "Name": "medievalUnit_08.png",
+        "X": "530",
+        "Y": "26",
+        "Width": "18",
+        "Height": "25"
+      },
+      {
+        "Name": "medievalUnit_09.png",
+        "X": "513",
+        "Y": "111",
+        "Width": "20",
+        "Height": "25"
+      },
+      {
+        "Name": "medievalUnit_10.png",
+        "X": "479",
+        "Y": "474",
+        "Width": "16",
+        "Height": "24"
+      },
+      {
+        "Name": "medievalUnit_11.png",
+        "X": "531",
+        "Y": "203",
+        "Width": "16",
+        "Height": "24"
+      },
+      {
+        "Name": "medievalUnit_12.png",
+        "X": "533",
+        "Y": "123",
+        "Width": "16",
+        "Height": "24"
+      },
+      {
+        "Name": "medievalUnit_13.png",
+        "X": "512",
+        "Y": "0",
+        "Width": "20",
+        "Height": "26"
+      },
+      {
+        "Name": "medievalUnit_14.png",
+        "X": "531",
+        "Y": "178",
+        "Width": "18",
+        "Height": "25"
+      },
+      {
+        "Name": "medievalUnit_15.png",
+        "X": "513",
+        "Y": "60",
+        "Width": "20",
+        "Height": "25"
+      },
+      {
+        "Name": "medievalUnit_16.png",
+        "X": "531",
+        "Y": "227",
+        "Width": "16",
+        "Height": "24"
+      },
+      {
+        "Name": "medievalUnit_17.png",
+        "X": "532",
+        "Y": "0",
+        "Width": "16",
+        "Height": "24"
+      },
+      {
+        "Name": "medievalUnit_18.png",
+        "X": "532",
+        "Y": "362",
+        "Width": "16",
+        "Height": "24"
+      },
+      {
+        "Name": "medievalUnit_19.png",
+        "X": "513",
+        "Y": "85",
+        "Width": "20",
+        "Height": "26"
+      },
+      {
+        "Name": "medievalUnit_20.png",
+        "X": "526",
+        "Y": "474",
+        "Width": "18",
+        "Height": "25"
+      },
+      {
+        "Name": "medievalUnit_21.png",
+        "X": "511",
+        "Y": "172",
+        "Width": "20",
+        "Height": "25"
+      },
+      {
+        "Name": "medievalUnit_22.png",
+        "X": "533",
+        "Y": "75",
+        "Width": "16",
+        "Height": "24"
+      },
+      {
+        "Name": "medievalUnit_23.png",
+        "X": "533",
+        "Y": "99",
+        "Width": "16",
+        "Height": "24"
+      },
+      {
+        "Name": "medievalUnit_24.png",
+        "X": "534",
+        "Y": "251",
+        "Width": "16",
+        "Height": "24"
+      }
+    ],
+    "ImagePath": "medievalRTS_spritesheet.png"
+  }
