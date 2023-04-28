@@ -82,7 +82,7 @@ namespace MonoMaze
                 Exit();
             }
 
-            if (mouseState.IsButtonDown(MouseButton.Right)){
+            if (mouseState.IsButtonDown(MouseButton.Middle)){
                 Vector2 delta = mouseState.DeltaPosition.ToVector2() * new Vector2(0.5f,0.5f);
                 _camera.Move(delta);
             }
