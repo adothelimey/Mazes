@@ -55,8 +55,9 @@ namespace MonoMaze
 
             grid = new Grid(currentMazeSettings.NumberOfRows, currentMazeSettings.NumberOfColumns);
 
-            var bt = new Sidewinder();
-            bt.ExecuteOn(grid);
+            var bt = new BinaryTree();
+            var o = new BinaryTreeOptions();
+            bt.ExecuteOn(grid, o);
 
             base.Initialize();
         }
@@ -92,8 +93,9 @@ namespace MonoMaze
                 textureAtlasIndex += 1;
                 grid = new Grid(currentMazeSettings.NumberOfRows, currentMazeSettings.NumberOfColumns);
 
-                var bt = new AldousBroder();
-                bt.ExecuteOn(grid);
+                var bt = new BinaryTree();
+                var o = new BinaryTreeOptions();
+                bt.ExecuteOn(grid, o);
             }
 
             if (mouseState.DeltaScrollWheelValue != 0)

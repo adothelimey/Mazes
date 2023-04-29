@@ -1,15 +1,20 @@
-﻿using System.Diagnostics;
+﻿using MazesForms.Forms;
+using System.Diagnostics;
 using System.Drawing.Imaging;
 using TheGrid;
 using TheGrid.Mazes.Algorithms;
 using TheGrid.Pathfinding;
+using static TheGrid.Mazes.Algorithms.BinaryTree;
 
 namespace MazesForms;
 public partial class MazeForm : Form
 {
     Grid? grid { get; set; }
-    MazeSettings currentMazeSettings = null;
+    MazeSettings? currentMazeSettings = null;
     int magicNumber = 12;
+
+    MazeAlgorithm? algo = null;
+    MazeAlgorithmOptions<BinaryTreeOptions>? binaryTreeOptions = null;
 
     public MazeForm()
     {
@@ -30,21 +35,47 @@ public partial class MazeForm : Form
         };
         grid = new Grid(currentMazeSettings.NumberOfRows, currentMazeSettings.NumberOfColumns);
 
-        MazeAlgorithm algo = currentMazeSettings.AlgoIndex switch
+        switch (currentMazeSettings.AlgoIndex)
         {
-            2 => new AldousBroder(),
-            1 => new Sidewinder(),
-            _ => new BinaryTree(),
-        };
+            case 2:
+                {
+                    algo = new AldousBroder();
+                    binaryTreeOptions = new MazeAlgorithmOptions<BinaryTreeOptions>();
+                    break;
+                }
+            case 1:
+                {
+                    algo = new Sidewinder();
+                    binaryTreeOptions = new MazeAlgorithmOptions<BinaryTreeOptions>();
+                    break;
+                }
+            case 0:
+            default:
+                {
+                    algo = new BinaryTree();
+                    
+                    binaryTreeOptions ??= new MazeAlgorithmOptions<BinaryTreeOptions>
+                    {
+                        Options.DirectionA = Direction.North,
+                        DirectionB = Direction.East
+                    };
+                    break;
+                }
+
+        }
+
+
+
+
 
         var stopWatch = new Stopwatch();
         stopWatch.Start();
-        algo.ExecuteOn(grid);
+        algo.ExecuteOn(grid, options);
         stopWatch.Stop();
         toolStripStatusLabel1.Text = $"Maze generation took {stopWatch.ElapsedTicks} ticks";
 
-        panel_Draw.AutoScroll = false;
-        panel_Draw.Size = new Size(grid.Columns * currentMazeSettings.CellWidth, grid.Rows * currentMazeSettings.CellHeight);
+        //panel_Draw.AutoScroll = false;
+        //panel_Draw.Size = new Size(grid.Columns * currentMazeSettings.CellWidth, grid.Rows * currentMazeSettings.CellHeight);
         panel_Draw.AutoScroll = true;
         panel_Draw.Invalidate();
     }
@@ -185,5 +216,21 @@ public partial class MazeForm : Form
 
 
         return adjustedColour;
+    }
+
+    private void lnkMazeAlgoSettings_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+    {
+        var mazeAlgoSettings = new AlgorithmSettingsForm(currentMazeSettings);
+
+        DialogResult result = mazeAlgoSettings.ShowDialog();
+
+        if (result == DialogResult.OK) {
+
+
+
+            var directionAB = mazeAlgoSettings.GetDirections();
+
+            
+        }
     }
 }
