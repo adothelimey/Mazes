@@ -38,9 +38,6 @@ public class BinaryTree : MazeAlgorithm
                             var bias = (double)o.DirectionBias / 100.0;
 
                             double randomNumber = Random.Shared.NextDouble();
-                            
-                            GridCell luckyWinner = null;
-
                             if (randomNumber < bias)
                             {
                                 //favour lower numbers
@@ -49,12 +46,14 @@ public class BinaryTree : MazeAlgorithm
                             else
                             {
                                 //favour higher numbers
-                                randomNumber = (randomNumber - bias) / (1 - bias);                                
+                                randomNumber = (randomNumber - bias) / (1 - bias);
                             }
                             int minVal = 1;
-                            int maxVal = neighboursToChooseFrom.Count();
+                            int maxVal = neighboursToChooseFrom.Count;
                             int biasedRandomNumber = (int)(randomNumber * (maxVal - minVal + 1)) + minVal;
 
+
+                            GridCell? luckyWinner;
                             if (neighboursToChooseFrom.Count > 1)
                             {
                                 luckyWinner = neighboursToChooseFrom[biasedRandomNumber - 1];
