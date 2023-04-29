@@ -10,9 +10,9 @@ namespace TheGrid.Mazes.Algorithms;
 /// </summary>
 public class BinaryTree : MazeAlgorithm
 {
-    public override void ExecuteOn(Grid grid, MazeAlgorithmOptions<BinaryTreeOptions> options)
-    {
-        BinaryTreeOptions o = options.Options;
+    public override void ExecuteOn(Grid grid, IMazeAlgorithmOptions options)
+    {        
+        BinaryTreeOptions o = (BinaryTreeOptions)options;
 
         if (grid != null)
         {
@@ -26,16 +26,42 @@ public class BinaryTree : MazeAlgorithm
                     if (cell != null)
                     {
                         //get north neighbour
-                        GridCell? north = cell.GetNeighbourInDirection(o.DirectionA);
+                        GridCell? A = cell.GetNeighbourInDirection(o.DirectionA);
 
                         //get east neighbour
-                        GridCell? east = cell.GetNeighbourInDirection(o.DirectionB);
-                        if (north != null) neighboursToChooseFrom.Add(north);
-                        if (east != null) neighboursToChooseFrom.Add(east);
+                        GridCell? B = cell.GetNeighbourInDirection(o.DirectionB);
+                        if (A != null) neighboursToChooseFrom.Add(A);
+                        if (B != null) neighboursToChooseFrom.Add(B);
 
                         if (neighboursToChooseFrom.Any())
                         {
-                            var luckyWinner = neighboursToChooseFrom[Random.Shared.Next(0, neighboursToChooseFrom.Count)];
+                            var bias = (double)o.DirectionBias / 100.0;
+
+                            double randomNumber = Random.Shared.NextDouble();
+                            
+                            GridCell luckyWinner = null;
+
+                            if (randomNumber < bias)
+                            {
+                                //favour lower numbers
+                                randomNumber /= bias;
+                            }
+                            else
+                            {
+                                //favour higher numbers
+                                randomNumber = (randomNumber - bias) / (1 - bias);                                
+                            }
+                            int minVal = 1;
+                            int maxVal = neighboursToChooseFrom.Count();
+                            int biasedRandomNumber = (int)(randomNumber * (maxVal - minVal + 1)) + minVal;
+
+                            if (neighboursToChooseFrom.Count > 1)
+                            {
+                                luckyWinner = neighboursToChooseFrom[biasedRandomNumber - 1];
+                            }
+                            else
+                                luckyWinner = neighboursToChooseFrom[0];
+
                             cell.LinkTo(luckyWinner);
                         }
                     }
@@ -45,8 +71,10 @@ public class BinaryTree : MazeAlgorithm
     }
 }
 
-public class BinaryTreeOptions
+public class BinaryTreeOptions : IMazeAlgorithmOptions
 {
     public Direction DirectionA { get; set; }
     public Direction DirectionB { get; set; }
+
+    public int DirectionBias { get; set; }
 }

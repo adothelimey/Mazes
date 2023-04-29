@@ -8,7 +8,7 @@ namespace TheGrid.Mazes.Algorithms;
 
 public class AldousBroder : MazeAlgorithm
 {
-    public override void ExecuteOn(Grid grid, MazeAlgorithmOptions options)
+    public override void ExecuteOn(Grid grid, IMazeAlgorithmOptions options)
     {
         var randomCell = grid.GetRandomCell();
         var numOfUnvisitedGridCells = grid.Size() - 1;
@@ -28,3 +28,5 @@ public class AldousBroder : MazeAlgorithm
     
     }
 }
+
+public class AldousBroderOptions : IMazeAlgorithmOptions { }

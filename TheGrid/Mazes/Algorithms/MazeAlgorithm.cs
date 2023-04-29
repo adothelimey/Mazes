@@ -8,14 +8,13 @@ namespace TheGrid.Mazes.Algorithms;
 
 public abstract class MazeAlgorithm
 {
-    public abstract void ExecuteOn(Grid grid, MazeAlgorithmOptions options);
+    public abstract void ExecuteOn(Grid grid, IMazeAlgorithmOptions options);
 
-    public class MazeAlgorithmOptions
-    {
-    }
+    
 }
 
-public class MazeAlgorithmOptions<T>
+public interface IMazeAlgorithmOptions
 {
-    public T Options { get; set; }
 }
+
+

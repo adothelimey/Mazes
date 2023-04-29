@@ -14,7 +14,7 @@ public partial class MazeForm : Form
     int magicNumber = 12;
 
     MazeAlgorithm? algo = null;
-    MazeAlgorithmOptions<BinaryTreeOptions>? binaryTreeOptions = null;
+    BinaryTreeOptions binaryTreeOptions = null;
 
     public MazeForm()
     {
@@ -40,13 +40,13 @@ public partial class MazeForm : Form
             case 2:
                 {
                     algo = new AldousBroder();
-                    binaryTreeOptions = new MazeAlgorithmOptions<BinaryTreeOptions>();
+                    binaryTreeOptions = new BinaryTreeOptions();
                     break;
                 }
             case 1:
                 {
                     algo = new Sidewinder();
-                    binaryTreeOptions = new MazeAlgorithmOptions<BinaryTreeOptions>();
+                    binaryTreeOptions = new BinaryTreeOptions();
                     break;
                 }
             case 0:
@@ -54,9 +54,9 @@ public partial class MazeForm : Form
                 {
                     algo = new BinaryTree();
                     
-                    binaryTreeOptions ??= new MazeAlgorithmOptions<BinaryTreeOptions>
+                    binaryTreeOptions ??= new BinaryTreeOptions
                     {
-                        Options.DirectionA = Direction.North,
+                        DirectionA = Direction.North,
                         DirectionB = Direction.East
                     };
                     break;
@@ -70,7 +70,7 @@ public partial class MazeForm : Form
 
         var stopWatch = new Stopwatch();
         stopWatch.Start();
-        algo.ExecuteOn(grid, options);
+        algo.ExecuteOn(grid, binaryTreeOptions);
         stopWatch.Stop();
         toolStripStatusLabel1.Text = $"Maze generation took {stopWatch.ElapsedTicks} ticks";
 
@@ -230,7 +230,9 @@ public partial class MazeForm : Form
 
             var directionAB = mazeAlgoSettings.GetDirections();
 
-            
+            binaryTreeOptions = new BinaryTreeOptions();
+            binaryTreeOptions.DirectionA = directionAB.Item1;
+            binaryTreeOptions.DirectionB = directionAB.Item2;
         }
     }
 }

@@ -8,7 +8,7 @@ namespace TheGrid.Mazes.Algorithms;
 
 public class Sidewinder : MazeAlgorithm
 {
-    public override void ExecuteOn(Grid grid, MazeAlgorithmOptions options)
+    public override void ExecuteOn(Grid grid, IMazeAlgorithmOptions options)
     {
         if (grid != null)
         {
@@ -47,3 +47,5 @@ public class Sidewinder : MazeAlgorithm
         }
     }
 }
+
+public class SideWinderOptions : IMazeAlgorithmOptions { }

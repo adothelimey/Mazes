@@ -15,6 +15,8 @@ namespace MazesForms.Forms;
 public partial class AlgorithmSettingsForm : Form
 {
     Array directionValues = Enum.GetValues(typeof(Direction));
+    static int directionIndex = 0;
+    static int directionBias = 50;
 
     public Tuple<Direction, Direction> GetDirections()
     {
@@ -61,22 +63,6 @@ public partial class AlgorithmSettingsForm : Form
     public AlgorithmSettingsForm(MazeSettings mazeSettings)
     {
         InitializeComponent();
-
-        //BindControls();
-    }
-
-    private void BindControls()
-    {
-        ////direction Enum
-        //cboBTDirectionA.DataSource = GetDirectionEnumNames(); ;
-        //cboBTDirectionB.DataSource = GetDirectionEnumNames();
-
-        //cboBTDirectionA.SelectedItem = Enum.GetName(typeof(Direction), directionValues.GetValue(0));
-        //cboBTDirectionB.SelectedItem = Enum.GetName(typeof(Direction), directionValues.GetValue(1));
-
-
-        //cboBTDirectionA_SelectedIndexChanged(cboBTDirectionA, EventArgs.Empty);
-        //cboBTDirectionB_SelectedIndexChanged(cboBTDirectionB, EventArgs.Empty);
     }
 
     private string[] GetDirectionEnumNames()
@@ -90,35 +76,19 @@ public partial class AlgorithmSettingsForm : Form
         return enumDirectionNames;
     }
 
-    private void cboBTDirectionA_SelectedIndexChanged(object sender, EventArgs e)
+    private void AlgorithmSettingsForm_Load(object sender, EventArgs e)
     {
-        ////remove direction A from direction B selection
-
-        //int selectedIndexA = cboBTDirectionA.SelectedIndex;
-        //cbo
-
-
-        //var selectedItemA = (string)cboBTDirectionA.SelectedItem;
-        //var selectedItemAValue = (Direction)Enum.Parse(typeof(Direction), selectedItemA);
-
-
-
-        //var newDataSource = GetDirectionEnumNames().Where(x => x != selectedItemA).ToArray();
-
-        //var bItem = cboBTDirectionB.SelectedItem;
-        //cboBTDirectionB.DataSource = newDataSource;
-        //cboBTDirectionB.SelectedItem = bItem;
+        comboBox1.SelectedIndex = directionIndex;
+        trkBias.Value = directionBias;
     }
 
-    private void cboBTDirectionB_SelectedIndexChanged(object sender, EventArgs e)
+    private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
     {
-        ////remove direction B from direction A selection
-        //var selectedItemB = (string)cboBTDirectionB.SelectedItem;
-        //var selectedItemBValue = (Direction)Enum.Parse(typeof(Direction), selectedItemB);
+        directionIndex = comboBox1.SelectedIndex;
+    }
 
-        //var newDataSource = GetDirectionEnumNames().Where(x => x != selectedItemB).ToArray();
-        //var aItem = cboBTDirectionA.SelectedItem;
-        //cboBTDirectionA.DataSource = newDataSource;
-        //cboBTDirectionA.SelectedItem = aItem;
+    private void trkBias_Scroll(object sender, EventArgs e)
+    {
+        directionBias = trkBias.Value;
     }
 }
