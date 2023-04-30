@@ -12,6 +12,7 @@ Console.WriteLine(grid.ToTextDisplay());
 Console.ReadKey();
 
 var bt = new BinaryTree();
-bt.ExecuteOn(grid);
+var opt = new BinaryTreeOptions();
+bt.ExecuteOn(grid, opt);
 Console.WriteLine(grid.ToTextDisplay());
 Console.ReadKey();

@@ -35,6 +35,10 @@ public class BinaryTree : MazeAlgorithm
 
                         if (neighboursToChooseFrom.Any())
                         {
+                            //for now, assume directionbias is an int between 0 and 100 representing the bias distance between DirectionA and DirectionB
+                            //When we pick a random neightbour from our neighbourlist, we will use the bias to influence our pick
+
+                            //convert int to double between 0 and 1.0
                             var bias = (double)o.DirectionBias / 100.0;
 
                             double randomNumber = Random.Shared.NextDouble();
@@ -48,20 +52,19 @@ public class BinaryTree : MazeAlgorithm
                                 //favour higher numbers
                                 randomNumber = (randomNumber - bias) / (1 - bias);
                             }
-                            int minVal = 1;
-                            int maxVal = neighboursToChooseFrom.Count;
+                            int minVal = 0;
+                            int maxVal = neighboursToChooseFrom.Count -1;
                             int biasedRandomNumber = (int)(randomNumber * (maxVal - minVal + 1)) + minVal;
 
+                            //GridCell luckyWinner = neighboursToChooseFrom[biasedRandomNumber];
+                            //if (neighboursToChooseFrom.Count > 1)
+                            //{
+                            //    luckyWinner = neighboursToChooseFrom[biasedRandomNumber];
+                            //}
+                            //else
+                            //    luckyWinner = neighboursToChooseFrom[0];
 
-                            GridCell? luckyWinner;
-                            if (neighboursToChooseFrom.Count > 1)
-                            {
-                                luckyWinner = neighboursToChooseFrom[biasedRandomNumber - 1];
-                            }
-                            else
-                                luckyWinner = neighboursToChooseFrom[0];
-
-                            cell.LinkTo(luckyWinner);
+                            cell.LinkTo(neighboursToChooseFrom[biasedRandomNumber]);
                         }
                     }
                 }

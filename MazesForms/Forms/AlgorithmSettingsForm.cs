@@ -18,6 +18,11 @@ public partial class AlgorithmSettingsForm : Form
     static int directionIndex = 0;
     static int directionBias = 50;
 
+    public int GetDirectionBias()
+    {
+        return directionBias;
+    }
+
     public Tuple<Direction, Direction> GetDirections()
     {
         Direction directionA;

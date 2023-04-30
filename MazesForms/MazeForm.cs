@@ -233,6 +233,7 @@ public partial class MazeForm : Form
             binaryTreeOptions = new BinaryTreeOptions();
             binaryTreeOptions.DirectionA = directionAB.Item1;
             binaryTreeOptions.DirectionB = directionAB.Item2;
+            binaryTreeOptions.DirectionBias = mazeAlgoSettings.GetDirectionBias();
         }
     }
 }
