@@ -55,15 +55,6 @@ public class BinaryTree : MazeAlgorithm
                             int minVal = 0;
                             int maxVal = neighboursToChooseFrom.Count -1;
                             int biasedRandomNumber = (int)(randomNumber * (maxVal - minVal + 1)) + minVal;
-
-                            //GridCell luckyWinner = neighboursToChooseFrom[biasedRandomNumber];
-                            //if (neighboursToChooseFrom.Count > 1)
-                            //{
-                            //    luckyWinner = neighboursToChooseFrom[biasedRandomNumber];
-                            //}
-                            //else
-                            //    luckyWinner = neighboursToChooseFrom[0];
-
                             cell.LinkTo(neighboursToChooseFrom[biasedRandomNumber]);
                         }
                     }
